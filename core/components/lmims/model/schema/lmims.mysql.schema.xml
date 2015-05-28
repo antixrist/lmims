@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="lmims" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="lmims"
+	   version="1.1">
+
+  <object class="lmims" table="lmims" extends="xPDOObject">
+    <field key="key"      dbtype="char"     precision="32"                            phptype="string"    null="false"  default=""    index="pk"    />
+    <field key="date"     dbtype="int"      precision="20"    attributes="unsigned"   phptype="timestamp" null="false"  default="0"   index="index" />
+    <field key="hash"     dbtype="char"     precision="40"                            phptype="string"    null="false"  default=""    index="index" />
+    <field key="url"      dbtype="text"                                               phptype="string"    null="false"  default=""    index=""      />
+    <field key="resource" dbtype="int"      precision="10"    attributes="unsigned"   phptype="integer"   null="false"  default="0"   index=""      />
+
+    <index  alias="key"   name="key"        primary="true"    unique="true"   type="BTREE">
+      <column key="key"   length=""         collation="A"     null="false" />
+    </index>
+    <index  alias="date"  name="date"       primary="false"   unique="false"  type="BTREE">
+      <column key="date"  length=""         collation="A"     null="false" />
+    </index>
+  </object>
+
+</model>

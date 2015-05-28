@@ -1,4 +1,8 @@
-## lmims
+--------------------
+lmims
+--------------------
+Author: Kartashov Alexey <ya.antixrist@gmail.com>
+--------------------
 
 "<b>L</b>ast <b>M</b>odified", "<b>I</b>f <b>M</b>odified <b>S</b>ince".
 
